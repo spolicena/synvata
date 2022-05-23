@@ -20,7 +20,7 @@ public class LoginServiceImpl implements LoginService {
     private final Logger logger = Logger.getLogger(LoginServiceImpl.class.getName());
 
     private final String regexPatternEmail = "^(.+)@(.+)$";
-    private final String regexStrongPass = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\\\S+$).{8,20}$";
+    private final String regexStrongPass = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,20}$";
 
     @Autowired
     private LoginRepository loginRepository;
