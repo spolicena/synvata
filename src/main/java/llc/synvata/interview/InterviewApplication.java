@@ -2,8 +2,10 @@ package llc.synvata.interview;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
-@SpringBootApplication(scanBasePackageClasses = InterviewApplication.class)
+@SpringBootApplication
+@EnableWebSecurity
 public class InterviewApplication {
 
 	public static void main(String[] args) {
